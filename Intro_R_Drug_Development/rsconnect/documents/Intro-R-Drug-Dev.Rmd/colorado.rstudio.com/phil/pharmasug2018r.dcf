@@ -1,0 +1,12 @@
+name: pharmasug2018r
+title: pharmasug2018R
+username: phil
+account: phil
+server: colorado.rstudio.com
+hostUrl: http://colorado.rstudio.com:3939/__api__
+appId: 1067
+bundleId: 5704
+url: http://colorado.rstudio.com:3939/content/1067/
+when: 1524947361.80167
+asMultiple: FALSE
+asStatic: FALSE
