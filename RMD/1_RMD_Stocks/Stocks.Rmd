@@ -13,12 +13,12 @@ params:
 
 library(quantmod)
 
-prices <- round(getSymbols(params$symbol, auto.assign = FALSE, src = 'google'), 2)
+prices <- round(getSymbols(params$symbol, auto.assign = FALSE), 2)
 close <- Cl(last(prices))
 open <- Op(last(prices))
 ```
 
-The stock closed `r ifelse(open>close,'up','down')` at `r close` dollars per share yesterday ... hey this Phil 11/8/2017 Have a great day!!!
+The stock closed `r ifelse(open>close,'up','down')` at `r close` dollars per share yesterday ... hey this Phil 04/29/2018 Have a great day!!!
 
 ## Price History
 
