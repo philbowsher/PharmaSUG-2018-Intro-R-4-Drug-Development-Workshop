@@ -1,5 +1,5 @@
 ---
-title: "Intro to Shiny, R Markdown & DBs - Application in Research & Drug Development"
+title: "Intro to Shiny, R Markdown & DBs - Application in Research & Drug Development PharmaSUG 2018"
 author: "Phil Bowsher"
 date: "Sun, April 29th, 2018"
 output: 
@@ -203,20 +203,20 @@ a {
 - ToothGrowth
 - View(ToothGrowth)
 - ToothGrowth %>% View("TG")
+- Any errors?
 - summary(ToothGrowth)
 - plot(ToothGrowth)
 - http://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ToothGrowth.html
-- Any errors?
 
 ## Let us explore the data set a bit
+- ToothGrowth%>% write_csv('ToothGrowth.csv')
+- ToothGrowth2 <-read_csv("ToothGrowth.csv")
 - names(ToothGrowth) # names of the variables
 - dim(ToothGrowth) # dimension (number of rows and columns)
 - str(ToothGrowth) # structure of the data set
 - class(ToothGrowth)
 - head(ToothGrowth, n = 5)
 - tail(ToothGrowth, n = 5)
-- ToothGrowth%>% write_csv('ToothGrowth.csv')
-- ToothGrowth2 <-read_csv("ToothGrowth.csv")
 
 ## Your Turn
 - Explore ToothGrowth
@@ -563,6 +563,7 @@ function(input, output) {
 - Create a new multi file shiny app in the IDE by going to 'File' and select 'New File' and select 'Shiny Web App...' and create a new multiple file app and title it 'pharmasugshiny'
 - Copy over the ui.R and app.R files with the code found [here:](https://github.com/rstudio/shiny-examples/tree/master/030-basic-datatable)
 - Click 'Run App' in the IDE when done
+- Github circle
 
 ## So, Which is better OJ or VC?
 - Let's explore ToothGrowth with some Interactive visualizations
@@ -643,6 +644,7 @@ shinyApp(ui, server)
 ## Trick to get more examples
 - Don't have to copy paste
 - https://github.com/rstudio/shiny-examples/
+- Github circle
 
 
 ## You Need a Dashboard!
@@ -1206,15 +1208,16 @@ bscols(widths = c(3,NA,NA),
 
 ## DB Examples
 - 1_DB_Examples
+- quick_db_demo.Rmd
 - https://rviews.rstudio.com/2017/10/18/database-queries-with-r/
 - https://community.rstudio.com/t/why-does-rstudio-documentation-recommend-odbc-vs-jdbc-drivers/2381/5
 
 ## Database R Markdown Dashboard
-- 5_RMD_Flex_Database
+- 7_RMD_Database_DB
 - https://rviews.rstudio.com/2017/10/18/database-queries-with-r/
 - https://community.rstudio.com/t/why-does-rstudio-documentation-recommend-odbc-vs-jdbc-drivers/2381/5
 
-## Shiny Development Example - flights-dashboard
+## Shiny Development Example - flights-dashboard & 
 
 - [How to develop a Shiny dashboard](http://db.rstudio.com/best-practices/dashboards/)
 - [Intro to dashboards](https://github.com/rstudio/bigdataclass2018/blob/master/assets/workbook/09-dashboards.Rmd)
@@ -1227,7 +1230,14 @@ bscols(widths = c(3,NA,NA),
 
 
 
+
+
+
 # Part 4 APIs
+
+# API Applicability
+- https://www.rplumber.io/docs/
+- https://raybuhr.github.io/2017/10/making-predictions-over-http/
 
 ## API - Info
 
@@ -1254,7 +1264,8 @@ bscols(widths = c(3,NA,NA),
 - https://www.rplumber.io/
 - https://www.mango-solutions.com/blog/production-r-at-ons
 - https://blog.rstudio.com/2017/08/03/rstudio-connect-v1-5-4-plumber/
-
+- https://analyticsprofile.com/business-analytics/convert-r-programs-into-rest-api/
+- https://shirinsplayground.netlify.com/2018/01/plumber/
 
 
 

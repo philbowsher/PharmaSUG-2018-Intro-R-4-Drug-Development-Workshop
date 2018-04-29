@@ -31,13 +31,10 @@ sidebar <- dashboardSidebar(
     
     selectInput(
       inputId = "table3",
-      label = "Confirmatory Table",
+      label = "Titer Table",
       choices = table_names),
 
-    fileInput('file3', 'Input File for Titer',
-              accept=c('text/csv', 
-                       'text/comma-separated-values,text/plain', 
-                       '.csv')),
+    # fileInput('file3', 'Input File for Titer', accept=c('text/csv', 'text/comma-separated-values,text/plain', '.csv')),
     
     tags$hr(),
     

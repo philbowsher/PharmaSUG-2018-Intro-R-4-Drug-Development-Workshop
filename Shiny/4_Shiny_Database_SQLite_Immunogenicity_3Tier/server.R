@@ -10,6 +10,16 @@ library(DBI)
 con <- dbConnect(RSQLite::SQLite(), "database.sqlite")
 RSQLite::initExtension(con)
 
+# Set WD
+# con <- dbConnect(RSQLite::SQLite(), "database.sqlite")
+# RSQLite::initExtension(con)
+# table_names
+# dbListTables(con)
+# screen <- tbl(con,  "screening_01") 
+# confirm <- tbl(con,  "confirmatory_01") 
+# dbListFields(con, "confirmatory_01")
+# DS <- screenconfirm <- left_join(screen, confirm) %>% mutate(Signal_Response_Difference = (as.numeric(Signal_Response_No_Drug) - as.numeric(Signal_Response_Drug))* 1.0) %>% mutate(Signal_Response_Divide = as.numeric(Signal_Response_Difference) / as.numeric(Signal_Response_No_Drug)) %>% mutate(Percent_Signal_Inhibition_Drug = as.numeric(Signal_Response_Divide) * 100) %>% collect()
+
 shinyServer(function(input, output, session) {
   
   screeningDatanew <- reactive({

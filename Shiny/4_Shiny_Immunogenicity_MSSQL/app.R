@@ -9,7 +9,7 @@ library(ggplot2)
 library(waffle)
 library(DT)
 
-load("samples.Rdata")
+# load("samples.Rdata")
 
 # Database connection ----------------------
 con <- dbConnect(odbc(), 

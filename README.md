@@ -1,4 +1,4 @@
-# Intro-Shiny-RMD-Research-Drug-Development by Phil Bowsher on Sun, April 29th, 2018
+# Intro-Shiny-RMD-DB-Drug-Development by Phil Bowsher on Sun, April 29th, 2018
 
 Live Presentation is here:
 
