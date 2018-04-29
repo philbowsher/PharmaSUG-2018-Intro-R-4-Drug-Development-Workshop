@@ -34,7 +34,7 @@ server <- shinyServer(function(input, output) {
   
   dataInput <- reactive({
     
-    prices <- getSymbols(input$symb, src = "google", auto.assign = FALSE)
+    prices <- getSymbols(input$symb, auto.assign = FALSE)
     
   }) 
   
